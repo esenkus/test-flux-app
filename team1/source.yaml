@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: testwebapp
+  namespace: team1
+spec:
+  interval: 1m
+  url: https://github.com/esenkus/test-web-app
+  ref:
+    branch: master
